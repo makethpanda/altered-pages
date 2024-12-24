@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Panda on Altered</h1>
+        <p>Hi, I'm Panda, competitive Altered player from France specializing in Yzmir and Lindiwe playstyles.</p>
+        <div class="terminal">
+            <div id="output">Type "ls" to see available posts or "cat [post_num]" to read an article.</div>
+            <p class="prompt" id="prompt"></p>
+        </div>
+    </div>
+    <script src="commands.js"></script>
+    <script>
+        const promptElement = document.getElementById('prompt');
+
+        async function setupPrompt() {
+            const ipAddress = await getIPAddress();
+            promptElement.innerHTML = `${ipAddress}@blog:~$ <input type="text" id="command-input">`;
+            const commandInput = document.getElementById('command-input');
+            commandInput.focus();
+            commandInput.addEventListener('keydown', handleCommand);
+        }
+
+        setupPrompt();
+    </script>
+</body>
+</html>
