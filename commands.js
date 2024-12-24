@@ -4,8 +4,8 @@ const outputElement = document.getElementById('output');
 
 const posts = [
     { key: "1", title: "Lindiwe Moonlight Jellyfish Guide", path: "posts/jellyfish-guide.html", date: "24/12/2024" },
-    { key: "2", title: "Jellyfish price analysis", path: "posts/jellyfish-prices.html", date: "24/10/2024" },
-    { key: "3", title: "Debugging like a Pro", path: "posts/post3.html", date: "--/--/2024" },
+    { key: "2", title: "Pretty visual", path: "posts/visual.html", date: "18/11/2024" },
+    { key: "3", title: "Jellyfish price analysis", path: "posts/jellyfish-prices.html", date: "24/10/2024" },
 ];
 
 async function getIPAddress() {
