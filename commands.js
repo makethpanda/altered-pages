@@ -4,7 +4,7 @@ const outputElement = document.getElementById('output');
 
 const posts = [
     { key: "1", title: "Lindiwe Moonlight Jellyfish Guide", path: "posts/jellyfish-guide.html", date: "24/12/2024" },
-    { key: "2", title: "Adventures in JavaScript", path: "posts/post2.html", date: "--/--/2024" },
+    { key: "2", title: "Jellyfish price analysis", path: "posts/jellyfish-prices.html", date: "24/10/2024" },
     { key: "3", title: "Debugging like a Pro", path: "posts/post3.html", date: "--/--/2024" },
 ];
 
